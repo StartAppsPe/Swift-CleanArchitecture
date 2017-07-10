@@ -38,6 +38,10 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UICollectionViewController {
         // somethingLabel.textColor = UIColor.blue
     }
     
+    // MARK: - Interaction handling
+    
+    // @IBAction func buttonPressed() { ...
+    
     // MARK: - Event handling
     
     func fetchSomething() {
