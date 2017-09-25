@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>clean-swift interactor do fetch</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func do&lt;#UseCase#&gt;(request: &lt;#Scene#&gt;.&lt;#UseCase#&gt;.Request) {
+        let response = &lt;#Scene#&gt;.&lt;#UseCase#&gt;.Response()
+        self.presenter.present&lt;#UseCase#&gt;(response: response)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>01C41AEC-835E-437C-8F9C-51C634C6FAFD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>StartApps CleanSwift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CleanSwift - Interactor Do Fetch</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

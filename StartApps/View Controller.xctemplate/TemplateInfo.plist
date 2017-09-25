@@ -47,6 +47,20 @@
 			<string>static</string>
     </dict>
 		<dict>
+			<key>Description</key>
+			<string>The name of the initial use case model</string>
+			<key>Identifier</key>
+			<string>useCase</string>
+			<key>Name</key>
+			<string>New Use Case Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
 			<key>Default</key>
 			<string>UIViewController</string>
 			<key>Description</key>
@@ -76,7 +90,7 @@
 		<string>com.apple.platform.iphoneos</string>
   </array>
 	<key>SortOrder</key>
-	<string>8</string>
+	<string>5</string>
   <key>Summary</key>
   <string>This generates a new view controller using Uncle Bob's clean architecture. Your view/view controller logic goes here.</string>
 </dict>

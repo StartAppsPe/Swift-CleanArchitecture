@@ -32,13 +32,41 @@
 			<key>Type</key>
 			<string>static</string>
     </dict>
+    <dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___Model</string>
+			<key>Description</key>
+			<string>The model name</string>
+			<key>Identifier</key>
+			<string>modelName</string>
+			<key>Name</key>
+			<string>Model Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+    </dict>
+		<dict>
+			<key>Description</key>
+			<string>The name of the initial use case model</string>
+			<key>Identifier</key>
+			<string>useCase</string>
+			<key>Name</key>
+			<string>New Use Case Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
   </array>
   <key>Platforms</key>
   <array>
 		<string>com.apple.platform.iphoneos</string>
   </array>
 	<key>SortOrder</key>
-	<string>3</string>
+	<string>1</string>
   <key>Summary</key>
   <string>This generates a new set of boundary models between the view controller, interactor, presenter, and router using Uncle Bob's clean architecture.</string>
 </dict>

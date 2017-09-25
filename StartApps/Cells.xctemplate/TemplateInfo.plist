@@ -4,12 +4,12 @@
 <dict>
 	<key>DefaultCompletionName</key>
 	<string>MyScene</string>
-  <key>Description</key>
-  <string>This generates a new interactor using Uncle Bob's clean architecture. Your business logic goes here.</string>
-  <key>Kind</key>
-  <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
-  <key>Options</key>
-  <array>
+	<key>Description</key>
+	<string>This generates a new cell using Uncle Bob&apos;s clean architecture. Your table/collection cell logic goes here.</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
 		<dict>
 			<key>Description</key>
 			<string>The name of the scene to create</string>
@@ -24,50 +24,59 @@
 			<key>Type</key>
 			<string>text</string>
 		</dict>
-    <dict>
+		<dict>
 			<key>Default</key>
 			<string>___VARIABLE_sceneName:identifier___</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Type</key>
 			<string>static</string>
-    </dict>
-    <dict>
+		</dict>
+		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Interactor</string>
+			<string>___VARIABLE_sceneName:identifier___Cell</string>
 			<key>Description</key>
-			<string>The interactor name</string>
+			<string>The cell name</string>
 			<key>Identifier</key>
-			<string>interactorName</string>
+			<string>cellName</string>
 			<key>Name</key>
-			<string>Interactor Name:</string>
+			<string>Cell Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
 			<string>static</string>
-    </dict>
+		</dict>
 		<dict>
+			<key>Default</key>
+			<string>UITableViewCell</string>
 			<key>Description</key>
-			<string>The name of the initial use case model</string>
+			<string>What cell class to subclass for the new scene</string>
+			<key>FallbackHeader</key>
+			<string>#import &lt;UIKit/UIKit.h&gt;</string>
 			<key>Identifier</key>
-			<string>useCase</string>
+			<string>cellSubclass</string>
 			<key>Name</key>
-			<string>New Use Case Name:</string>
+			<string>Subclass of:</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>
-			<true/>
+			<string>YES</string>
 			<key>Type</key>
-			<string>text</string>
+			<string>class</string>
+			<key>Values</key>
+			<array>
+				<string>UITableViewCell</string>
+				<string>UICollectionViewCell</string>
+			</array>
 		</dict>
-  </array>
-  <key>Platforms</key>
-  <array>
+	</array>
+	<key>Platforms</key>
+	<array>
 		<string>com.apple.platform.iphoneos</string>
-  </array>
+	</array>
 	<key>SortOrder</key>
-	<string>3</string>
-  <key>Summary</key>
-  <string>This generates a new interactor using Uncle Bob's clean architecture. Your business logic goes here.</string>
+	<string>8</string>
+	<key>Summary</key>
+	<string>This generates a new cell using Uncle Bob&apos;s clean architecture. Your table/collection cell logic goes here.</string>
 </dict>
 </plist>

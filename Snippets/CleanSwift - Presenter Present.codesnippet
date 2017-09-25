@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>clean-swift presenter present</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func present&lt;#UseCase#&gt;(response: &lt;#Scene#&gt;.&lt;#UseCase#&gt;.Response) {
+        let viewModel = &lt;#Scene#&gt;.&lt;#UseCase#&gt;.ViewModel()
+        viewController?.display&lt;#UseCase#&gt;(viewModel: viewModel)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F817460C-9D45-45D0-9B64-9653E2CFF5DA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>StartApps CleanSwift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CleanSwift - Presenter Present</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
