@@ -13,7 +13,7 @@ import UIKit
 
 class ___VARIABLE_sceneName___TableViewCell: UITableViewCell {
 
-    static let identifier = "___VARIABLE_sceneName___CollectionViewCell"
+    static let identifier = "___VARIABLE_sceneName___TableViewCell"
 
     // @IBOutlet weak var iconImageView: UIImageView!
     // @IBOutlet weak var titleLabel:    UILabel!
@@ -28,6 +28,8 @@ class ___VARIABLE_sceneName___TableViewCell: UITableViewCell {
         didSet {
             // Configure cell from object
             // iconImageView.image = displayedSomething.image
+            // titleLabel.text = displayedSomething.title
+            // contentLabel.text = displayedSomething.content
         }
     }
 
