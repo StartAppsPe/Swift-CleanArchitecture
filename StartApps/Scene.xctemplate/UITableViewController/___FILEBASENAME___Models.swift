@@ -12,9 +12,9 @@
 import Foundation
 
 enum ___VARIABLE_sceneName___Scene {
-
+    
     enum ___VARIABLE_useCase___ {
-
+        
         struct Request {
         }
         struct Response {
@@ -23,8 +23,20 @@ enum ___VARIABLE_sceneName___Scene {
             struct DisplayedSomething {
                 // let title: String
             }
+            // let displayedSomethings: [DisplayedSomething]
         }
-
+        
+    }
+    
+    enum AlertError {
+        
+        struct Response {
+            let error: Error
+        }
+        struct ViewModel {
+            let message: String
+        }
+        
     }
 
 }

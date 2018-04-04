@@ -24,4 +24,15 @@ enum ___VARIABLE_sceneName___Scene {
         
     }
     
+    enum AlertError {
+        
+        struct Response {
+            let error: Error
+        }
+        struct ViewModel {
+            let message: String
+        }
+        
+    }
+
 }

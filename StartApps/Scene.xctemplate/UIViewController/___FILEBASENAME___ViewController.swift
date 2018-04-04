@@ -46,14 +46,23 @@ class ___VARIABLE_sceneName___ViewController: UIViewController {
 
     func do___VARIABLE_useCase___() {
         // NOTE: Ask the Interactor to do some work
+        // NOTE: Start loading animation here
         interactor.do___VARIABLE_useCase___(request: ___VARIABLE_sceneName___Scene.___VARIABLE_useCase___.Request())
     }
 
     // MARK: - Display logic
-
+    
     func display___VARIABLE_useCase___(viewModel: ___VARIABLE_sceneName___Scene.___VARIABLE_useCase___.ViewModel) {
+        // NOTE: Stop loading animation here
         // NOTE: Display the result from the Presenter
         // somethingLabel.text = viewModel.name
+    }
+    
+    func displayAlertError(viewModel: ___VARIABLE_sceneName___Scene.AlertError.ViewModel) {
+        // NOTE: Stop loading animation here
+        let alert = UIAlertController(title: "Error", message: viewModel.message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 
 }

@@ -16,11 +16,17 @@ class ___VARIABLE_sceneName___Presenter {
     weak var viewController: ___VARIABLE_sceneName___ViewController?
 
     // MARK: - Presentation logic
-
+    
     func present___VARIABLE_useCase___(response: ___VARIABLE_sceneName___Scene.___VARIABLE_useCase___.Response) {
         // NOTE: Format the response from the Interactor and pass the result back to the View Controller
         // NOTE: Remember to use workers if complex processing is required
         viewController?.display___VARIABLE_useCase___(viewModel: ___VARIABLE_sceneName___Scene.___VARIABLE_useCase___.ViewModel())
+    }
+    
+    func presentAlertError(response: ___VARIABLE_sceneName___Scene.AlertError.Response) {
+        viewController?.displayAlertError(viewModel: ___VARIABLE_sceneName___Scene.AlertError.ViewModel(
+            message: response.error.localizedDescription
+        ))
     }
 
 }

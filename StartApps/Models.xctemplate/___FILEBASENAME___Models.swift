@@ -12,16 +12,27 @@
 import Foundation
 
 enum ___VARIABLE_sceneName___Scene {
-
+    
     enum ___VARIABLE_useCase___ {
-
+        
         struct Request {
         }
         struct Response {
         }
         struct ViewModel {
         }
-
+        
+    }
+    
+    enum AlertError {
+        
+        struct Response {
+            let error: Error
+        }
+        struct ViewModel {
+            let message: String
+        }
+        
     }
 
 }

@@ -23,7 +23,13 @@ class ___VARIABLE_sceneName___Interactor {
 
     func do___VARIABLE_useCase___(request: ___VARIABLE_sceneName___Scene.___VARIABLE_useCase___.Request) {
         // NOTE: Pass the result to the Presenter
-        presenter?.present___VARIABLE_useCase___(response: ___VARIABLE_sceneName___Scene.___VARIABLE_useCase___.Response())
+        do {
+            presenter?.present___VARIABLE_useCase___(response: ___VARIABLE_sceneName___Scene.___VARIABLE_useCase___.Response())
+        } catch {
+            presenter?.presentAlertError(response: ___VARIABLE_sceneName___Scene.AlertError.Response(
+                error: error
+            ))
+        }
     }
 
 }
